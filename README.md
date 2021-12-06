@@ -1,9 +1,11 @@
 # Bubble Chart Table
-A Bubble Chart within a Material UI Table. 
-
+A simple Bubble Chart within a Material UI Table. This chart can be used to easily compare different datasets. I has a unique way of conveing the size difference via a Bubble right next to the actual data.
 
 ## Demo
-You can fidn a working demo here: https://ljxc8.csb.app/
+You can find a working demo here: https://ljxc8.csb.app/
+or see the example below: 
+
+![Bubble Chart Example](https://github.com/Lawlez/Bubble-Chart-Table/blob/main/example.png?raw=true)
 
 ## Data Structure:
 
@@ -158,3 +160,25 @@ export default data
 
 ```
 
+
+MIT License
+
+Copyright (c) 2021 Dominik Feger
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
