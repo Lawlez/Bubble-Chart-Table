@@ -1,0 +1,14 @@
+{
+    "title": "Bubble-Chart-Table",
+    "devDependencies": {
+      "react-scripts": "latest"
+    },
+    "description": "",
+    "dependencies": {
+      "@material-ui/core": "4.12.3",
+      "react": "latest",
+      "react-dom": "latest"
+    },
+    "keywords": [],
+    "name": "bubblechart-table-v3"
+  }
