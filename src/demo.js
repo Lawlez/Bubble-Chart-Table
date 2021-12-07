@@ -28,9 +28,12 @@ const useStyles = makeStyles({
   },
 })
 
-const normalize = (val, max = 24, min = 0) => {
-  const minRange = 2
-  const maxRange = 20
+const normalize = (val, max = 12, min = 0) => {
+  // normalize the value to a number between 0 and 12, 
+  // when in doubt set `max` to half of your highest value shown (e.g. 24/2=12)
+  const minRange = 1
+  const maxRange = 10
+  // minRange & maxRange are the range of the values that are considered "normal"
   const variation = Math.abs((maxRange - minRange) / (max - min).toFixed(2))
 
   return val === 0 ? val : (minRange + (val - min) * variation).toFixed(2)
@@ -38,6 +41,7 @@ const normalize = (val, max = 24, min = 0) => {
 
 export default function BasicTable() {
   const classes = useStyles()
+  const { data: tableData, headCells } = data
 
   return (
     <TableContainer component={Paper}>
@@ -45,7 +49,7 @@ export default function BasicTable() {
         <TableHead>
           <TableRow>
             <TableCell></TableCell>
-            {data.HeadCells.map(cell => (
+            {headCells.map(cell => (
               <TableCell key={cell.id} variant="body" align="center">
                 {cell.name}
               </TableCell> 
@@ -53,11 +57,11 @@ export default function BasicTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.data.map((row) => (
+          {tableData.map((row) => (
             <TableRow key={row.name}>
               {Object.keys(row).map(
                 (cell, cellId) =>
-                  cell !== 'fett' && (
+                  cell !== 'isBold' && (
                     <TableCell
                       key={row.name + cell + row[cell]}
                       component="th"
@@ -65,7 +69,7 @@ export default function BasicTable() {
                       size="small"
                     >
                       {cellId === 0 ? (
-                        row.fett ? (
+                        row.isBold ? (
                           <b>{row[cell]}</b>
                         ) : (
                           row[cell]
