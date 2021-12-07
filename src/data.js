@@ -1,5 +1,5 @@
 const data = {
-  HeadCells: [
+  headCells: [
     { id: 'Total', name: 'Total' },
     { id: 'CrossSectional', name: 'Cross-sectional' },
     { id: 'Longitudinal', name: 'Longitudinal' },
@@ -10,8 +10,8 @@ const data = {
   data: [
     {
       name: 'Depression',
-      fett: false,
-      Total: 4,
+      isBold: false,
+      Total: 15,
       CrossSectional: 3,
       Longitudinal: 1,
       Qualitative: 0,
@@ -20,17 +20,17 @@ const data = {
     },
     {
       name: 'PTSD',
-      fett: false,
+      isBold: false,
       Total: 7,
       CrossSectional: 4,
       Longitudinal: 0,
-      Qualitative: 0,
+      Qualitative: 1,
       Conceptual: 2,
       Other: 0,
     },
     {
       name: 'Substance abuse',
-      fett: false,
+      isBold: false,
       Total: 5,
       CrossSectional: 0,
       Longitudinal: 3,
@@ -40,7 +40,7 @@ const data = {
     },
     {
       name: 'Arthritis & chronic pain',
-      fett: false,
+      isBold: false,
       Total: 12,
       CrossSectional: 2,
       Longitudinal: 1,
@@ -50,7 +50,7 @@ const data = {
     },
     {
       name: 'Cancer',
-      fett: true,
+      isBold: true,
       Total: 122,
       CrossSectional: 19,
       Longitudinal: 21,
@@ -60,7 +60,7 @@ const data = {
     },
     {
       name: 'Cardiovascular diseases',
-      fett: false,
+      isBold: false,
       Total: 20,
       CrossSectional: 6,
       Longitudinal: 4,
@@ -70,7 +70,7 @@ const data = {
     },
     {
       name: 'COPD',
-      fett: false,
+      isBold: false,
       Total: 6,
       CrossSectional: 3,
       Longitudinal: 2,
@@ -80,7 +80,7 @@ const data = {
     },
     {
       name: 'Diabetes',
-      fett: false,
+      isBold: false,
       Total: 25,
       CrossSectional: 15,
       Longitudinal: 5,
@@ -90,7 +90,7 @@ const data = {
     },
     {
       name: 'Disability',
-      fett: false,
+      isBold: false,
       Total: 6,
       CrossSectional: 1,
       Longitudinal: 1,
@@ -100,7 +100,7 @@ const data = {
     },
     {
       name: 'HIV/ AIDS',
-      fett: true,
+      isBold: true,
       Total: 12,
       CrossSectional: 6,
       Longitudinal: 0,
@@ -110,7 +110,7 @@ const data = {
     },
     {
       name: 'Multiple sclerosis',
-      fett: false,
+      isBold: false,
       Total: 5,
       CrossSectional: 2,
       Longitudinal: 0,
@@ -120,7 +120,7 @@ const data = {
     },
     {
       name: 'Stroke',
-      fett: false,
+      isBold: false,
       Total: 7,
       CrossSectional: 0,
       Longitudinal: 0,
@@ -130,7 +130,7 @@ const data = {
     },
     {
       name: 'Unspecified/ other ᶜ',
-      fett: true,
+      isBold: true,
       Total: 46,
       CrossSectional: 13,
       Longitudinal: 0,
