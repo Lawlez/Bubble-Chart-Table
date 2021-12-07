@@ -7,9 +7,29 @@ or see the example below:
 
 ![Bubble Chart Example](https://github.com/Lawlez/Bubble-Chart-Table/blob/main/example.png?raw=true)
 
+## usage
+
+### installing the project
+
+1. clone the repository 
+`git clone https://github.com/Lawlez/Bubble-Chart-Table.git`
+
+2. navigate into the project directory
+`cd Bubble-Chart-Table`
+
+3. install dependecies and start project:
+
+`yarn install && yarn start`
+
+4. Open a Browser pointing to
+`http://localhost:3333`
+the port can be set in an .env file using the PORT=3333 directive.
+
 ## Data Structure:
 
 The Data is imported from `data.js`and is recognized in this format:
+
+Data points can be added and customized freely, the application will display new rows or categories automatically.
 
 ```javascript
 const data = {
@@ -161,6 +181,7 @@ export default data
 ```
 
 
+```java
 MIT License
 
 Copyright (c) 2021 Dominik Feger
@@ -182,3 +203,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
